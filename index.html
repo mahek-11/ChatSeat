@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Seat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('CSphoto.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #c4a664;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #a28b50;
+        }
+        @media (max-width: 768px) {
+            .buttons {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .buttons {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chat Seat</h1>
+        <p>Sit here if you don't mind, someone stopping to say Hello:</p>
+        <div class="buttons">
+            <button class="btn">Tips for Good Listener</button>
+            <button class="btn">Book your Slots</button>
+            <button class="btn">Discuss your experience</button>
+            <button class="btn">Feedback Form</button>
+            <button class="btn">Help</button>
+        </div>
+    </div>
+</body>
+</html>
