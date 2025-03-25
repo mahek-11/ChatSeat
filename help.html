@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Have a Chat Seat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .sidebar {
+            background-color: #A8E4F2;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            height: calc(100vh - 60px);
+            width: 16%;
+            padding: 20px 15px;
+            overflow-y: auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+            border: 3px solid gold;
+            border-radius: 50%;
+            font-weight: bold;
+            color: gold;
+            line-height: 72px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .nav-links a {
+            display: block;
+            margin: 15px 0;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .logout-btn {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .logout-btn:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dashboard-header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .main-content {
+            margin-left: 17%;
+            padding: 80px 40px 40px;
+        }
+
+        .help-section {
+            max-width: 800px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .dashboard-header {
+                margin-left: 0;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard-header">
+        <h4 class="m-0">Help & Instructions</h4>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar">
+                <div>
+                    <div class="logo">Logo</div>
+                    <div class="nav-links">
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="coordinator.html">Coordinator</a>
+                        <a href="listenertips.html">Listener Tips</a>
+                        <a href="booking.html">Book Your Slot</a>
+                        <a href="chatroom.html">Chat Room</a>
+                        <a href="feedback.html">Feedback</a>
+                        <a href="aboutus.html">About Us</a>
+                    </div>
+                </div>
+                <div class="bottom-links">
+                    <a href="login.html" class="logout-btn">Logout</a>
+                </div>
+            </div>
+
+            <div class="col-md-10 px-5 py-4 main-content">
+                <div class="content-area">
+                    <h2 class="fw-bold mb-4">How to Use the Website</h2>
+                    <p>Follow these instructions to navigate and use the website effectively.</p>
+
+                    <div class="help-section">
+
+                        <h4 class="mt-4">Dashboard</h4>
+                        <p>- The left sidebar allows you to access different pages like booking, chat room, and feedback.</p>
+
+                        <h4 class="mt-4">Book Your Slot</h4>
+                        <p>- Choose an available time slot and confirm your booking.</p>
+
+                        <h4 class="mt-4">Chat Room</h4>
+                        <p>- In the chat room, you can start a new discussion by clicking "New Topic", or reply to existing topics.</p>
+
+                        <h4 class="mt-4">Feedback</h4>
+                        <p>- Fill out the feedback form to share your experience.</p>
+
+                        <h4 class="mt-4">About Us</h4>
+                        <p>- If you need further assistance, contact the support team through the **"About Us"** page.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
